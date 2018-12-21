@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainMenu">
+
+
+    <Button
+        android:id="@+id/button_ToDo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="To Do"
+        app:layout_constraintBottom_toTopOf="@id/button_AddNewData"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <Button
+        android:id="@+id/button_AddNewData"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Edit Data"
+        app:layout_constraintBottom_toTopOf="@id/button_EditData"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_ToDo" />
+
+    <Button
+        android:id="@+id/button_EditData"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Edit Data"
+        app:layout_constraintBottom_toTopOf="@id/button_ViewTrends"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_AddNewData" />
+
+    <Button
+        android:id="@+id/button_ViewTrends"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="View Trends"
+        app:layout_constraintBottom_toTopOf="@id/button_Settings"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_EditData" />
+
+    <Button
+        android:id="@+id/button_Settings"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Settings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_ViewTrends" />
+</android.support.constraint.ConstraintLayout>
